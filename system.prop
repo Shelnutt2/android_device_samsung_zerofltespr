@@ -1,0 +1,36 @@
+#
+# system.prop for zerofltespr
+#
+rild.libpath=/system/lib64/libsec-ril.so
+rild.libargs=-d /dev/ttyS0
+
+telephony.lteOnCdmaDevice=1
+ro.telephony.default_network=8
+#
+# HWUI_BUILD_PROPERTIES
+#
+ro.hwui.texture_cache_size=88
+ro.hwui.layer_cache_size=58
+ro.hwui.path_cache_size=16
+ro.hwui.shape_cache_size=4
+ro.hwui.gradient_cache_size=2
+ro.hwui.drop_shadow_cache_size=8
+ro.hwui.r_buffer_cache_size=4
+ro.hwui.text_small_cache_width=2048
+ro.hwui.text_small_cache_height=2048
+ro.hwui.text_large_cache_width=4096
+ro.hwui.text_large_cache_height=4096
+debug.hwc.nodirtyregion=0
+debug.hwc.force_gpu=0
+debug.hwc.winupdate=1
+
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=2m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.isa.arm64.features=default
+dalvik.vm.isa.arm.features=div
+dalvik.vm.dexopt-flags=m=y
+persist.sys.dalvik.vm.lib.2=libart.so
